@@ -181,6 +181,10 @@
 #[path = "bindings_aarch64.rs"]
 pub mod bindings;
 
+#[cfg(target_arch = "riscv64")]
+#[path = "bindings_riscv64gc.rs"]
+pub mod bindings;
+
 #[cfg(any(target_arch = "x86", target_arch = "x86_64"))]
 #[path = "bindings_x86_64.rs"]
 pub mod bindings;
